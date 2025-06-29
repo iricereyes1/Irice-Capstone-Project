@@ -92,20 +92,20 @@ wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="styleshe
         <!-- Right -->
         <div class="col-md-6">
 
-          <form name="contact" method="POST" data-netlify="true">
+          <form name="contact" method="POST" data-netlify="true" onSubmit="submit" >
             <div class="mb-3">
               <label for="name" class="form-label text-white">Name</label>
-              <input type="text" class="form-control" id="name" placeholder="Your name" required>
+              <input type="text" class="form-control" id="name" name="name" placeholder="Your name" required>
             </div>
 
             <div class="mb-3">
               <label for="email" class="form-label text-white"> Your Email</label>
-              <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+              <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" required>
             </div>
 
             <div class="mb-3">
               <label for="message" class="form-label text-white">Message</label>
-              <textarea class="form-control" id="message" rows="5" placeholder="Type your message..."
+              <textarea class="form-control" id="message" name="message" rows="5" placeholder="Type your message..."
                 required></textarea>
             </div>
 
